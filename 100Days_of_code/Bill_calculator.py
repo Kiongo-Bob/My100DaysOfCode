@@ -1,0 +1,6 @@
+bill = float(input("Enter the bill: "))
+tip = float(input("Enter the tip in percentage without the '%' sign: "))
+number_of_people = int(input("Enter the number of people splitting the bill."))
+total_bill = (bill * (1+tip/100))
+bill_per_person = "{:.3f}".format((total_bill/number_of_people))
+print(f"Amount per person is: {bill_per_person}")
